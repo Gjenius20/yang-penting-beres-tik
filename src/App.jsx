@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
-import sgitVideo from './assets/video.mp4'
+import sgitVideo from "./assets/video.mp4";
+import logoImg from "./assets/logo.png";
 
 // ═══════════════════════════════════════════════════════════════
 // DATA
@@ -1240,7 +1241,12 @@ export default function App() {
       {/* NAVBAR */}
       <nav style={S.nav}>
         <div style={S.navLogo} onClick={() => go("home")}>
-          💻 HardwareEdu
+          <img
+            src={logoImg}
+            alt="HardwareEdu"
+            style={{ width: 32, height: 32, objectFit: "contain" }}
+          />
+          HardwareEdu
         </div>
         <div style={S.navLinks}>
           {navItems.map((n) => (
@@ -2994,7 +3000,7 @@ export default function App() {
                     <iframe
                       width="200"
                       height="356"
-                      src={`https://www.youtube.com/embed/${selectedHW.videoId}?rel=0&modestbranding=1`}
+                      src={``}
                       title={`Video ${selectedHW.name}`}
                       frameBorder="0"
                       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -3155,14 +3161,13 @@ export default function App() {
             marginBottom: 4,
           }}
         >
-          💻 HardwareEdu
+          <img src={logoImg} alt="" style={{ width: 24, height: 24, objectFit: "contain", verticalAlign: "middle", marginRight: 6 }} />
+HardwareEdu
         </div>
         <p style={{ fontSize: 12, marginBottom: 8 }}>
           Platform edukasi hardware kelompok 1
         </p>
-        <p style={{ fontSize: 11, color: "#475569" }}>
-          © 2025 HardwareEdu
-        </p>
+        <p style={{ fontSize: 11, color: "#475569" }}>© 2025 HardwareEdu</p>
       </footer>
     </div>
   );
@@ -3220,7 +3225,7 @@ function LoginPage({ onLogin, dm, S }) {
         }}
       >
         <div style={{ textAlign: "center", marginBottom: 28 }}>
-          <div style={{ fontSize: 52, marginBottom: 10 }}>💻</div>
+          <img src={logoImg} alt="HardwareEdu" style={{ width: 80, height: 80, objectFit: "contain", marginBottom: 10 }} />
           <div
             style={{
               fontWeight: 800,
