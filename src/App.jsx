@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import sgitVideo from './assets/video.mp4'
 
 // ═══════════════════════════════════════════════════════════════
 // DATA
@@ -1582,7 +1583,7 @@ export default function App() {
                 <iframe
                   width="200"
                   height="356"
-                  src="https://www.youtube.com/embed/Ol8D69VKX2k?rel=0&modestbranding=1"
+                  src={sgitVideo}
                   title="Arsitektur Komputer"
                   frameBorder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -3157,10 +3158,10 @@ export default function App() {
           💻 HardwareEdu
         </div>
         <p style={{ fontSize: 12, marginBottom: 8 }}>
-          Platform edukasi hardware komputer untuk pelajar Indonesia
+          Platform edukasi hardware kelompok 1
         </p>
         <p style={{ fontSize: 11, color: "#475569" }}>
-          © 2025 HardwareEdu · Dibuat dengan ❤️ untuk pelajar Indonesia
+          © 2025 HardwareEdu
         </p>
       </footer>
     </div>
